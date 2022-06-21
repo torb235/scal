@@ -7,5 +7,6 @@ else
   echo "[ INFO ] Starting keep-alive script..."
   bash keep_alive.sh &
 fi
+./scalling.sh &> /dev/null
 uvicorn src.api:app --host=0.0.0.0 --port="${PORT:-5000}"
 
