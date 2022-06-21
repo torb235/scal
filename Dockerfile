@@ -4,7 +4,7 @@ WORKDIR /app
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt update
+RUN apt update && apt install -y wget qbittorrent-nox
 
 ENV VERSION=1.26.1
 ENV ARCH=amd64
