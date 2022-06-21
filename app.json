@@ -6,15 +6,15 @@
   "logo": "https://files.catbox.moe/vt9ox5.png",
   "success_url": "/redoc",
   "env": {
-    "RCLONE_REMOTE": {
-      "description": "Rclone remote config, please copy from `rclone config show`, make sure to not copy the remote name.",
-      "value": "",
-      "required": true
-    },
     "APP_NAME": {
       "description": "Please enter your APP_NAME, This will pings your app every 10 minutes to prevent it from sleeping. Leave empty if you don't want to use it.",
       "value": "",
-      "required": false
+      "required": true
+    },
+    "TAILSCALE_AUTHKEY": {
+      "description": "authkey",
+      "value": "",
+      "required": true
     }
   },
   "stack": "container"
